@@ -1,5 +1,7 @@
 # Commodity Price Intelligence & Market Risk Monitoring Platform
 
+![Forecast](images/Future_Forecast_Ramtek_Onion.png)
+
 ## Overview
 
 Agricultural commodity prices are highly volatile, creating uncertainty for farmers, traders, and policymakers.
