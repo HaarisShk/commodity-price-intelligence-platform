@@ -122,30 +122,32 @@ Potential applications include:
 
 ---
 
-## Technologies Used
+## Technologies & Techniques
 
 ### Programming & Analytics
+- Python
+- Pandas
+- NumPy
 
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* Statsmodels
-* Prophet
-* XGBoost
+### Forecasting & Modeling
+- Statsmodels
+- Prophet
+- Scikit-learn
+- XGBoost
 
 ### Analytical Techniques
-
-* Time-Series Forecasting
-* Time-Series Cross-Validation
-* Seasonal Decomposition (STL)
-* Anomaly Detection
-* Model Evaluation & Selection
+- Data Cleaning & Preprocessing
+- Exploratory Data Analysis (EDA)
+- Time-Series Forecasting
+- Time-Series Cross-Validation
+- Seasonal Decomposition (STL)
+- Anomaly Detection
+- Model Evaluation & Selection
+- Business Insight Generation
 
 ### Visualization
-
-* Matplotlib
-* Seaborn
+- Matplotlib
+- Seaborn
 
 ---
 
