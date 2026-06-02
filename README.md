@@ -67,7 +67,6 @@ The best-performing model was selected for each commodity-market combination bas
 
 Example forecast:
 
-![Forecast](images/forecast_onion_ramtek.png)
 
 ---
 
@@ -77,7 +76,7 @@ In addition to forecasting, anomaly detection was used to identify unusual price
 
 These anomalies can act as early warning signals and help stakeholders monitor periods of abnormal market behavior.
 
-![Anomaly Detection](images/Anomaly_detection_Onion.png_)
+![Anomaly Detection]
 
 ---
 
