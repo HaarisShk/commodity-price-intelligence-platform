@@ -1,4 +1,4 @@
-# Commodity Price Intelligence & Market Risk Monitoring Platform
+# Commodity Price Intelligence & Market Risk Analytics
 
 ![Forecast](images/Future_Forecast_Ramtek_Onion.png)
 
