@@ -76,7 +76,7 @@ In addition to forecasting, anomaly detection was used to identify unusual price
 
 These anomalies can act as early warning signals and help stakeholders monitor periods of abnormal market behavior.
 
-![Anomaly Detection]
+![Anomaly Detection](images/Anomaly_detection_Onion.png)
 
 ---
 
