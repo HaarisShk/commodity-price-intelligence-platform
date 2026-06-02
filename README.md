@@ -86,7 +86,7 @@ Seasonal decomposition (STL) was performed to separate long-term trends, recurri
 
 This helped provide a clearer understanding of the factors influencing commodity prices over time.
 
-![STL Decomposition](images/stl_vashi_new_mumbai_onion.png)
+![STL Decomposition](images/STL_Vashi_New_Mumbai_Onion.png)
 
 ---
 
