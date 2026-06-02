@@ -48,14 +48,18 @@ The project followed an end-to-end analytics workflow:
 * Anomaly detection
 * Forecast generation and interpretation
 
-Forecasting approaches included:
+# Forecasting Models Evaluated
+To compare forecasting performance across different commodity-market combinations, the following approaches were evaluated:
 
+## Statistical Models
 * AutoARIMA
 * ETS
 * Prophet
+## Machine Learning Models
 * Random Forest
 * XGBoost
 * Support Vector Regression (SVR)
+Rather than applying a single forecasting model across all commodities, the best-performing model was selected for each commodity-market combination based on validation performance.
 
 ---
 
@@ -65,7 +69,6 @@ Rather than applying a single forecasting model across all commodities, multiple
 
 The best-performing model was selected for each commodity-market combination based on validation performance.
 
-Example forecast:
 
 
 ---
@@ -92,9 +95,11 @@ This helped provide a clearer understanding of the factors influencing commodity
 
 ## What I Found
 
-### Different commodities required different forecasting approaches
+### No Universal Best Forecasting Model
 
 One of the most interesting findings was that there was no single forecasting model that consistently performed best across all commodities and markets.
+
+### Commodity Characteristics Matter
 
 Model performance varied significantly depending on commodity behavior and market characteristics. Stable commodities often performed well with statistical forecasting techniques, while highly volatile commodities such as onions frequently benefited from machine learning approaches.
 
@@ -102,7 +107,7 @@ Model performance varied significantly depending on commodity behavior and marke
 
 Several periods of unusual price behavior were identified through anomaly detection, highlighting potential market disruptions and volatility spikes.
 
-### Forecasts should be interpreted as ranges, not exact values
+### Forecast Uncertainty Is Important
 
 Confidence intervals provided a more realistic representation of future uncertainty and helped frame forecasts as decision-support tools rather than precise predictions.
 
@@ -143,6 +148,7 @@ Potential applications include:
 - Seasonal Decomposition (STL)
 - Anomaly Detection
 - Model Evaluation & Selection
+- Feature Engineering
 - Business Insight Generation
 
 ### Visualization
