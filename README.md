@@ -2,64 +2,130 @@
 
 ![Forecast](images/Future_Forecast_Ramtek_Onion.png)
 
+
 ## Overview
 
-Agricultural commodity prices are highly volatile, creating uncertainty for farmers, traders, and policymakers.
+Agricultural commodity prices can fluctuate significantly across markets due to seasonality, weather conditions, supply-demand imbalances, and local market dynamics. These fluctuations make planning difficult for farmers, traders, and other stakeholders.
 
-This project develops a data-driven market intelligence platform that forecasts future commodity prices, detects unusual market behavior, and generates risk-aware forecasts across Maharashtra agricultural markets.
+In this project, I analyzed over 119,000 agricultural market records across Maharashtra to forecast future commodity prices, identify unusual market behavior, and generate insights that could support better decision-making.
+
+---
+
+## Project Snapshot
+
+* 119,000+ agricultural market records
+* 8 commodities
+* 36 Maharashtra markets
+* Weather-enriched dataset
+* Forecasting, anomaly detection, and market risk analysis
+* Multiple forecasting approaches evaluated using time-series cross-validation
+
+---
 
 ## Business Problem
 
-Agricultural markets frequently experience sudden price fluctuations due to seasonality, supply-demand imbalances, weather conditions, and market dynamics.
+Commodity markets are inherently volatile. Sudden price spikes and drops can affect procurement decisions, inventory planning, and profitability.
 
-The objective of this project was to develop a system capable of:
+The goal of this project was to answer three key questions:
 
-* Forecasting future commodity prices
-* Detecting anomalous market behavior
-* Comparing forecasting approaches
-* Generating confidence-aware forecasts
-* Supporting data-driven decision making
+1. Can future commodity prices be forecasted reliably?
+2. Can unusual market behavior be identified automatically?
+3. Does forecasting performance vary across different commodities and markets?
 
-## Dataset
+---
 
-* 119,000+ market observations
-* Multiple agricultural commodities
-* Multiple Maharashtra markets
-* Weather-enriched data
-* Historical price records
+## How the Analysis Was Performed
 
-## Key Capabilities
+The project followed an end-to-end analytics workflow:
 
-* Time Series Forecasting
-* Anomaly Detection
-* Seasonal Decomposition (STL)
-* Cross-Validation Framework
-* Model Selection & Evaluation
-* Forecast Confidence Intervals
+* Data cleaning and preprocessing
+* Exploratory analysis of commodities and markets
+* Weather data integration
+* Feature engineering
+* Forecasting model development
+* Time-series cross-validation
+* Model comparison and selection
+* Anomaly detection
+* Forecast generation and interpretation
 
-## Repository Structure
+Forecasting approaches included:
 
-data/ – Dataset
+* AutoARIMA
+* ETS
+* Prophet
+* Random Forest
+* XGBoost
+* Support Vector Regression (SVR)
 
-notebooks/ – Forecasting pipeline
+---
 
-outputs/ – Forecast results and model summaries
+## Price Forecasting
 
-images/ – Key project visualizations
+Rather than applying a single forecasting model across all commodities, multiple approaches were evaluated and compared.
 
-reports/ – Project documentation
+The best-performing model was selected for each commodity-market combination based on validation performance.
 
-presentation/ – Project presentation
+Example forecast:
 
-## Key Results
+![Forecast](images/forecast_onion_ramtek.png)
 
-* Generated future commodity price forecasts
-* Identified anomalous market conditions
-* Evaluated multiple forecasting approaches
-* Quantified forecast uncertainty using confidence intervals
-* Produced market intelligence insights for decision support
+---
+
+## Anomaly Detection
+
+In addition to forecasting, anomaly detection was used to identify unusual price movements and potential market disruptions.
+
+These anomalies can act as early warning signals and help stakeholders monitor periods of abnormal market behavior.
+
+![Anomaly Detection](images/anomaly_detection_onion.png)
+
+---
+
+## Seasonality Analysis
+
+Seasonal decomposition (STL) was performed to separate long-term trends, recurring seasonal patterns, and unexplained residual movements.
+
+This helped provide a clearer understanding of the factors influencing commodity prices over time.
+
+![STL Decomposition](images/stl_vashi_new_mumbai_onion.png)
+
+---
+
+## What I Found
+
+### Different commodities required different forecasting approaches
+
+One of the most interesting findings was that there was no single forecasting model that consistently performed best across all commodities and markets.
+
+Model performance varied significantly depending on commodity behavior and market characteristics. Stable commodities often performed well with statistical forecasting techniques, while highly volatile commodities such as onions frequently benefited from machine learning approaches.
+
+### Market anomalies were clearly visible
+
+Several periods of unusual price behavior were identified through anomaly detection, highlighting potential market disruptions and volatility spikes.
+
+### Forecasts should be interpreted as ranges, not exact values
+
+Confidence intervals provided a more realistic representation of future uncertainty and helped frame forecasts as decision-support tools rather than precise predictions.
+
+---
+
+## Business Value
+
+This project demonstrates how analytics can be used to support decision-making in volatile markets.
+
+Potential applications include:
+
+* Price trend monitoring
+* Procurement planning
+* Market risk assessment
+* Inventory planning
+* Early identification of unusual market conditions
+
+---
 
 ## Technologies Used
+
+### Programming & Analytics
 
 * Python
 * Pandas
@@ -68,13 +134,57 @@ presentation/ – Project presentation
 * Statsmodels
 * Prophet
 * XGBoost
+
+### Analytical Techniques
+
+* Time-Series Forecasting
+* Time-Series Cross-Validation
+* Seasonal Decomposition (STL)
+* Anomaly Detection
+* Model Evaluation & Selection
+
+### Visualization
+
 * Matplotlib
-* Time Series Analysis
+* Seaborn
+
+---
+
+## Repository Structure
+
+```text
+data/
+├── Agri_Market_3Cities_With_Weather.csv
+
+notebooks/
+├── forecasting_pipeline.ipynb
+
+outputs/
+├── best_model_summary.csv
+├── future_forecasts.csv
+└── cross_validation_results.csv
+
+images/
+├── forecast_onion_ramtek.png
+├── anomaly_detection_onion.png
+└── stl_vashi_new_mumbai_onion.png
+
+reports/
+└── project_report.pdf
+```
 
 ## Project Context
 
-This project was completed as part of a postgraduate academic team project.
+This project was completed as part of a postgraduate academic team project focused on agricultural market analytics and forecasting.
 
-### My Contribution
+## My Contribution
 
-To be updated.
+My contributions included:
+
+* Data preprocessing and exploratory data analysis
+* Weather data integration and feature engineering
+* Forecasting model development and evaluation
+* Time-series cross-validation
+* Anomaly detection analysis
+* Forecast generation and interpretation
+* Project documentation and presentation preparation
